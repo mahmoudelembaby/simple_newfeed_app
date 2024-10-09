@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect x="50" y="50" width="150" height="120" fill="lightblue" stroke="black"/>
+  <text x="125" y="80" text-anchor="middle" font-weight="bold">User</text>
+  <text x="60" y="100">id (PK)</text>
+  <text x="60" y="120">username</text>
+  <text x="60" y="140">email</text>
+  <text x="60" y="160">password_hash</text>
+
+  <rect x="300" y="50" width="150" height="120" fill="lightgreen" stroke="black"/>
+  <text x="375" y="80" text-anchor="middle" font-weight="bold">Post</text>
+  <text x="310" y="100">id (PK)</text>
+  <text x="310" y="120">user_id (FK)</text>
+  <text x="310" y="140">content</text>
+  <text x="310" y="160">created_at</text>
+
+  <rect x="550" y="50" width="150" height="100" fill="lightyellow" stroke="black"/>
+  <text x="625" y="80" text-anchor="middle" font-weight="bold">Comment</text>
+  <text x="560" y="100">id (PK)</text>
+  <text x="560" y="120">user_id (FK)</text>
+  <text x="560" y="140">post_id (FK)</text>
+
+  <rect x="300" y="250" width="150" height="80" fill="lightpink" stroke="black"/>
+  <text x="375" y="280" text-anchor="middle" font-weight="bold">Like</text>
+  <text x="310" y="300">id (PK)</text>
+  <text x="310" y="320">user_id (FK)</text>
+  <text x="310" y="340">post_id (FK)</text>
+
+  <rect x="550" y="250" width="150" height="80" fill="lightsalmon" stroke="black"/>
+  <text x="625" y="280" text-anchor="middle" font-weight="bold">Share</text>
+  <text x="560" y="300">id (PK)</text>
+  <text x="560" y="320">user_id (FK)</text>
+  <text x="560" y="340">post_id (FK)</text>
+
+  <rect x="50" y="250" width="150" height="80" fill="lightgrey" stroke="black"/>
+  <text x="125" y="280" text-anchor="middle" font-weight="bold">Follow</text>
+  <text x="60" y="300">id (PK)</text>
+  <text x="60" y="320">follower_id (FK)</text>
+  <text x="60" y="340">followee_id (FK)</text>
+
+  <!-- Relationships -->
+  <line x1="200" y1="110" x2="300" y2="110" stroke="black"/>
+  <line x1="200" y1="110" x2="550" y2="100" stroke="black"/>
+  <line x1="200" y1="110" x2="300" y2="290" stroke="black"/>
+  <line x1="200" y1="110" x2="550" y2="290" stroke="black"/>
+  <line x1="450" y1="110" x2="550" y2="100" stroke="black"/>
+  <line x1="450" y1="110" x2="300" y2="290" stroke="black"/>
+  <line x1="450" y1="110" x2="550" y2="290" stroke="black"/>
+  <line x1="125" y1="170" x2="125" y2="250" stroke="black"/>
+</svg>
